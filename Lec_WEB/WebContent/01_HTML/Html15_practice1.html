@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<!-- <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+<script>
+
+$(document).ready(function() {
+    $(".payBtn").click(function() {
+      if (clicked) {
+        $(this).css('background-color', 'red');
+      } else {
+        $(this).css('background-color', 'blue');
+      }
+    });
+});
+</script> -->
+
+<meta charset="UTF-8">
+<title>주문 폼 작성</title>
+<style>
+  table {
+    width:1000px;
+    border: 1px solid #444444;
+    border-collapse: collapse;
+  }
+  th, td {
+    text-align:left;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 7px;
+  }
+  .btn { 
+	margin:15px auto; 
+	text-align:center; 
+	cursor: pointer;
+  }   
+ .btn:hover{color:#ff0000;}
+
+</style>
+</head>
+<body>
+<div class="container">
+<form action="" method="post" >
+    <h1>주문정보입력 </h1>
+    <table>
+	    <tbody>
+	            <tr>
+	                <th>주문자정보</th>
+	                <td>
+	                                            비회원으로 상품구매시 반드시 본인인증을 하셔야합니다
+	                   <input type="button" name="phone" value="휴대폰인증" /> 
+	                   <input type="button" name="ipin" value="아이핀인증" />    
+	                </td>
+	            </tr>
+	            <tr>
+	                <th rowspan="3">주소</th>
+	                <td>
+	                <input type="text" name="nick" value="" disabled/>
+	                <input type="button" name="searchAddress" value="주소찾기" />
+	                </td>
+	            </tr>
+	            
+	            <tr>
+                    <td>
+                        <input type="text" name="nick" value="" disabled style="width: 650px"/>
+                    </td>
+	            </tr>
+	            
+                <tr>
+                   <td><input type="text" name="nick" value="" style="width: 650px" /></td>
+                </tr>
+	            
+	            <tr>
+	                <th>휴대전화</th>
+	                <td>
+	                   <select name="phoneNum1">
+	                       <option>010</option>
+	                       <option>011</option>
+	                       <option>016</option>
+	                       <option>017</option>
+	                   </select>
+	                   <span>-</span>
+	                   <input type="text" name="phoneNum2" value="" style="width: 120px"/>
+                       <span>-</span>
+                       <input type="text" name="phoneNum3" value="" style="width: 120px"/>
+                       <input type="checkbox" name="sms" checked="checked"/>
+                       <span>sms수신동의</span>
+	                </td>
+	            </tr>
+	            
+	            <tr>
+                    <th>이메일</th>
+                    <td>
+                       <input type="text" name="email1" value="" />
+                       <span>@</span>
+                       <input type="text" name="email2" value="" />
+                       <select name="phoneNum1">
+                           <option>직접입력</option>
+                           <option>gmail.com</option>
+                           <option>naver.com</option>
+                           <option>daum.net</option>
+                       </select>
+                    </td>
+                </tr>
+	    
+	    </tbody>
+    </table>
+    
+    <span style="font-size: 12px">*책임을 지지 않습니다</span>
+    
+    <h1>배송지정보입력</h1>
+    <table>
+        <tbody>
+                <tr style="background-color: #e5e5e5 ">
+                    <th>배송지선택</th>
+                    <td>
+                       <input type="button" name="same_person" value="주문자 정보와 동일" />   
+                    </td>
+                </tr>
+                <tr>
+                    <th>받으시는분</th>
+                    <td>
+                       <input type="text" name="arrival_person" />   
+                    </td>
+                </tr>
+                <tr>
+                    <th rowspan="3">주소</th>
+                    <td>
+                    <input type="text" name="nick" value="" disabled/>
+                    <input type="button" name="searchAddress" value="주소찾기" />
+                    <input type="checkbox" name="addressSave"/>
+                    <span>배송지목록에 추가</span>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <input type="text" name="nick" value="" disabled style="width: 650px"/>
+                    </td>
+                </tr>
+                
+                <tr>
+                   <td><input type="text" name="nick" value="" style="width: 650px" /></td>
+                </tr>
+                
+                <tr>
+                    <th>휴대전화</th>
+                    <td>
+                       <select name="phoneNum1">
+                           <option>010</option>
+                           <option>011</option>
+                           <option>016</option>
+                           <option>017</option>
+                       </select>
+                       <span>-</span>
+                       <input type="text" name="phoneNum2" value="" style="width: 120px"/>
+                       <span>-</span>
+                       <input type="text" name="phoneNum3" value="" style="width: 120px"/>
+                       <input type="checkbox" name="safePhone" checked="checked" />
+                       <span>안심번호사용(무료)</span>
+                       <input type="checkbox" name="homePhone" />
+                       <span>집전화 추가입력</span>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <th>배송시요구사항</th>
+                    <td>
+                        <input type="text" name="nick" value="" style="width: 650px" />
+                        <span>(0자/50자)</span>
+                        <br/>
+                        <span style="font-size: 12px;color: blue">*판매자와 연락하여 배송일을 확인해주시기 바랍니다</span>
+                    </td>
+                </tr>
+        
+        </tbody>
+    </table>
+    
+    <h1>결제정보입력</h1>
+    <table>
+        <tbody>
+                <tr style="background-color: #e5e5e5 ">
+                    <th>신용카드</th>
+                    <td>
+                       <input type="radio" name="same_person" checked="checked"/>신용카드(일반)
+                       <input type="radio" name="same_person" />신용카드(법인) 
+                       <input type="radio" name="same_person" />해외발급카드   
+                    </td>
+                </tr>
+                <tr style="background-color: #e5e5e5 ">
+                    <th>현금결제</th>
+                    <td>
+                       <input type="radio" name="same_person" />무통장입금
+                       <input type="radio" name="same_person" />실시간계좌이체
+                    </td>
+                </tr>
+                <tr>
+                    <th>카드선택</th>
+                    <td>
+                       <select name="card" style="width:150px;height: 25px">
+                           <option>선택하세요</option>
+                           <option>삼성카드</option>
+                           <option>국민카드</option>
+                           <option>현대카드</option>
+                       </select> 
+                    </td>
+                </tr>
+                <tr>
+                    <th>할부방식</th>
+                    <td>
+                       <select name="card_halbu" style="width:150px;height: 25px">
+                           <option>일시불</option>
+                           <option>1개월</option>
+                           <option>3개월</option>
+                           <option>6개월</option>
+                       </select> 
+                    </td>
+                </tr>
+                
+                <tr>
+                    <th>결제방식</th>
+                    <td>
+                        <input type="button" value="간편결제안내" name="pay" class="btn"/>
+                        <input type="button" value="공인인증안내" name="pay" class="btn"/>
+                        <input type="button" value="안전결제안내" name="pay" class="btn"/>
+                        <input type="button" value="안심클릭안내" name="pay" class="btn"/>
+                        <input type="button" value="해외발급카드안내" name="pay" class="btn"/>
+                    </td>
+                </tr>
+        
+        </tbody>
+    </table>
+</form>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

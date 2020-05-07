@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>RWD - Media Query</title>
+<style>
+
+* {
+	box-sizing: border-box;  /* RWD 필수 */
+}
+[class*="col-"]{
+    float: left;
+    border: 7px solid #ffffff;
+}
+div{height: 300px;}
+.div100{height: 100px;}
+.div150{height: 150px;}
+.div300{height: 300px;}
+
+.col-1 {width: 8.33%; }  /* 1칸 짜리 폭 */
+.col-2 {width: 16.66%; }  /* 2칸 짜리 폭 */
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+.divnono1{display: none;}
+
+/* 2: 768px 이하 일때 적용 */
+@media screen and (max-width: 768px){
+    /* Table */
+    .col-m-1 {width: 8.33%; }  /* 1칸 짜리 폭 */
+    .col-m-2 {width: 16.66%; }  /* 2칸 짜리 폭 */
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+    .divnono1{display: block;}
+    .divnone{display: none;}
+    .divh{height: 150px;}
+}
+
+
+/* 3: 600px 이하 일때 적용 */
+@media screen and (max-width:600px){
+    .col-s-1 {width: 8.33%;}  /* 1칸 짜리 폭 */
+    .col-s-2 {width: 16.66%; }  /* 2칸 짜리 폭 */
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;height: 100px;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+    .divnone{display: block;}
+    .divA{
+        display:none;
+    }
+    .divD{
+        height: 200px;
+    }
+    .div4{
+        height:200px;
+    }
+    .divC{
+        height: 100px;
+    }
+    .divD{
+        height: 250px;
+    }
+    .divz{display: none;}
+}
+
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- 다음 2가지 경우 비교 -->
+<!--
+<link href="CSS/RWD4_pc_first.css" rel="stylesheet" type="text/css">
+-->
+
+
+ 
+</head>
+<body>
+<!-- header -->
+
+<div class="col-4 col-m-2 div100 divA" style="background-color: #e5e5e5;">A</div>
+<div class="col-8 col-m-10 div100 col-s-12" style="background-color: blue;">B</div>
+
+<div class="clear" style="height: 0px;"></div>
+
+<!-- menu -->
+<div class="col-2 col-m-2 div300 col-s-12 divC" style="background-color: #cc5151;">C</div>
+<div class="col-6 col-m-8 div300 col-s-1 divD col-s-12" style="background-color: #111111;;">D</div>
+<div class="col-4 col-m-2 div100 divh col-s-4 divE" style="background-color: hsl(0, 0%, 90%);">E</div>
+<div class="col-4 col-m-2 div100 divh col-s-4 divF" style="background-color: #b5da11;;">F</div>
+<div class="col-4 divnone div100 col-s-4 divG" style="background-color: #052a61;">G</div>
+
+<div class="clear" style="height: 0px;"></div>
+
+<!-- article -->
+<div class="col-12 col-m-3 divnono1 div100 divz" style="background-color: #90e035;">G
+</div>
+<div class="col-12 col-m-9 div100 col-s-12" style="background-color: #90e035;">H
+</div>
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

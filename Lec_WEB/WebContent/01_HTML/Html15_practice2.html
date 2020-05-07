@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>캘린더 폼 작성</title>
+<style>
+#cal {
+	border-collapse: collapse;
+	border-spacing: 1px;
+	text-align: center;
+	line-height: 1.5;
+	margin: 20px;
+	width: 800px;
+	overflow: hidden;
+}
+
+#cal th {
+	width: 155px;
+	padding: 10px;
+	font-weight: bold;
+	vertical-align: top;
+	background: #e5e5e5;
+	border: 1px solid #ccc;
+}
+
+#cal td {
+	border: 1px solid #ccc;
+	text-align: left;
+	width: 155px;
+	padding: 10px;
+	vertical-align: top;
+	background: #fff;
+}
+
+#cal td:hover {
+	background-color: #e4e4e4;
+}
+
+#topMenu {
+	width:800px;
+	overflow: hidden;
+}
+
+#topMenu ul li {
+	list-style: none;
+	color: white;
+	background-color: #e5e5e5;
+	float: left;
+	text-align: center;
+	line-height:40px;
+}
+
+#topMenu .menuLink {
+	text-decoration: none;
+	color: #353535;
+	display: block;
+	width: 190px;
+	font-size: 12px;
+	font-weight: bold;
+	overflow: hidden;
+}
+
+#topMenu li:hover {
+	background-color: #6B66FF;
+}
+#topMenu .menuLink:hover{
+    color: #fff;
+}
+
+#foot{
+    border-collapse: collapse;
+    border-spacing: 1px;
+    text-align: center;
+    line-height: 1.5;
+    margin: 20px;
+    width: 800px;
+    overflow: hidden;
+}
+#foot th {
+    border: 1px solid #ccc;
+    background-color: #e5e5e5;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+
+#foot td {
+    border: 1px solid #ccc;
+    padding: 3px;
+}
+#number span{
+    padding:10px;
+    width: 20px;
+    height: 30px;
+}
+
+#number span:hover{
+    cursor:pointer;
+    background-color: #A566FF;
+}
+
+
+</style>
+</head>
+<body>
+	<div id="topMenu">
+		<ul>
+			<li><a class="menuLink" href="#">정책차림표</a></li>
+			<li></li>
+			<li><a class="menuLink" href="#">미리보는지원사업</a></li>
+			<li></li>
+			<li><a class="menuLink" href="#"> 마감임박지원사업</a></li>
+			<li></li>
+			<li><a class="menuLink" href="#"> 접수중인지원사업</a></li>
+			<li></li>
+		</ul>
+	</div>
+
+	<div style="text-align: center;width: 800px;margin: 20px">
+	    <span style="font-size: 40px;color: #F361DC">&lt;</span>
+		<span style="font-size: 30px; color: #4641D9; font-weight: bold;">2015-06-17</span>
+		<span style="font-size: 40px;color: #F361DC">&gt;</span>
+	</div>
+	<div style="width: 800px;height:50px;overflow: hidden;background-color: #EAEAEA;margin: 20px;text-align: left;line-height: 50px">
+		<input type="radio" checked="checked" />전체
+		<input type="radio" />창업벤처
+		<input type="radio" />소상공인
+		<input type="radio" />판로수출
+		<input type="radio" />R&D 
+	    <input type="radio" />금융세재 <input type="radio" />인력
+	</div>
+	<table id="cal">
+		<tr>
+			<th>일</th>
+			<th>월</th>
+			<th>화</th>
+			<th>수</th>
+			<th>목</th>
+			<th>금</th>
+			<th>토</th>
+		</tr>
+		<tr>
+			<td></td>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+			<td>4</td>
+			<td>5</td>
+			<td>6</td>
+		</tr>
+		<tr>
+			<td>7</td>
+			<td>8</td>
+			<td>9</td>
+			<td>10</td>
+			<td>11</td>
+			<td>12</td>
+			<td>13</td>
+		</tr>
+		<tr>
+			<td>14</td>
+			<td>16</td>
+			<td>17</td>
+			<td>18</td>
+			<td>19</td>
+			<td>20</td>
+			<td>21</td>
+		</tr>
+		<tr>
+			<td>22</td>
+			<td>23</td>
+			<td>24</td>
+			<td>25</td>
+			<td>26</td>
+			<td>27</td>
+			<td>28</td>
+		</tr>
+		<tr>
+			<td>29</td>
+			<td>30</td>
+			<td style="background-color: #e2e2e2"></td>
+			<td style="background-color: #e2e2e2"></td>
+			<td style="background-color: #e2e2e2"></td>
+			<td style="background-color: #e2e2e2"></td>
+			<td style="background-color: #e2e2e2"></td>
+		</tr>
+	</table>
+	    <span style="color: #ff0000;font-size: 12px">· 2015년 6월7일 전체</span>
+	    <span style="font-size: 12px">검색결과, 진행중인 사업은</span>
+	    <span style="color: #ff0000;font-size: 12px"> 총 614 건 입니다.</span>   
+	<div style="width: 800px">
+		<table id="foot">
+			<thead>
+				<tr>
+					<th>번호</th>
+					<th>지원사업명</th>
+					<th>주관부처</th>
+					<th>신청기간</th>
+					<th>조회</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>2015년 창조경제 벤처창업대전 정부포상 및 전시회 참가 신청..</td>
+					<td>중소기업청</td>
+					<td>2015.06.04 ~ 2015.06.30</td>
+					<td>731</td>
+				</tr>
+				<tr>
+					<td>10</td>
+					<td>2015년 창조경제 벤처창업대전 정부포상 및 전시회 참가 신청..</td>
+					<td>중소기업청</td>
+					<td>2015.06.04 ~ 2015.06.30</td>
+					<td>731</td>
+				</tr>
+				<tr>
+					<td>614</td>
+					<td>2015년 창조경제 벤처창업대전 정부포상 및 전시회 참가 신청..</td>
+					<td>중소기업청</td>
+					<td>2015.06.04 ~ 2015.06.30</td>
+					<td>731</td>
+				</tr>
+				<tr>
+					<td>614</td>
+					<td>2015년 창조경제 벤처창업대전 정부포상 및 전시회 참가 신청..</td>
+					<td>중소기업청</td>
+					<td>2015.06.04 ~ 2015.06.30</td>
+					<td>731</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div style="width: 800px;text-align: center;" id="number">
+		<span>&lt;&lt;</span> 
+		<span>&lt;</span>
+		<span><a class="menuLink" href="#">1</a></span>
+		<span><a class="menuLink" href="#">2</a></span>
+		<span><a class="menuLink" href="#">3</a></span>
+		<span><a class="menuLink" href="#">4</a></span>
+		<span><a class="menuLink" href="#">5</a></span>
+		<span>&gt;</span>
+		<span>&gt;&gt;</span>
+	</div>
+	<div style="width: 800px;height:50px;background-color: #e5e5e5;line-height: 50px;margin:20px">
+	   <div style="text-align:center;">
+		<select>
+			<option style="width: 30px" selected>키워드</option>
+		</select> 
+		<input type="text" size=50px />
+		<button>검색</button>
+		</div>
+	</div>
+	
+	
+
+	<br>
+	<br>   
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
