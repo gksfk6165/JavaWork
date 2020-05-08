@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+header{
+    height:100px;
+}
+#menubar {
+    height: 100px;
+    background-color: black;
+
+}
+.menu{
+    display:inline-block;
+    color:white;
+    list-style: none;
+}
+
+#book{
+    padding-left:200px;
+}
+#img{
+    clear:both;
+    height:auto;
+}
+
+    .col-1 {width: 8.33%; }  /* 1칸 짜리 폭 */
+    .col-2 {width: 16.66%; }  /* 2칸 짜리 폭 */
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+</style>
+</head>
+
+<body>
+    <header class=".col-12">
+        <div id ="menubar" class=".col-12">
+            <ul>
+                <li class="menu">책</li>
+                <li class="menu">영화</li>
+                <li class="menu">스토리</li>
+                <li class="menu">기타</li>
+            </ul>
+        </div>
+    </header>
+    
+        <div id="img" class=".col-12">
+            <img  src = "img/main_marvel.jpg" style="width:100%; height:auto">
+        </div>
+
+   
+</body>
+
+</html>
