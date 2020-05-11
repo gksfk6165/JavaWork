@@ -1,0 +1,145 @@
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .menu_bar ul {
+            list-style: none;
+            float: left;
+        }
+        header{
+            position: fixed;
+            z-index: 1;
+            background-color: white;
+        }
+        .header_height{
+            height: 80px;
+            
+        }
+
+        .menu_bar li {
+            float: left;
+        }
+
+        .menu_bar>.menu_right {
+            float: left;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        .main_div{
+            position: absolute;
+            top:100px;
+
+        }
+        .sam_theme {
+            font-size: 10px;
+            margin: 0 0 0 10px;
+        }
+
+        .menu_left {
+            float: left;
+        }
+
+        .slide {
+            float: left;
+        }
+        button {
+      border: white;
+      background-color: white;
+      outline: 0;
+    }
+
+    button:hover {
+      cursor: pointer;
+    }
+
+    .section {
+      width: 100%;
+      height:auto;
+      
+    }
+
+    .section3 {
+      width: 100%;
+      height:auto;
+    }
+
+    .section3>div {
+      width: 25%;
+      float: left;
+      padding: 10px;
+
+    }
+    .section1{
+        text-align: center;
+    }
+
+    .a {
+      background-color: lightgray;
+      border-radius: 10px;
+      font-size: 10px;
+      height: 250px;
+    }
+    .samsung{
+        width:100%;
+        height:auto;
+    }
+
+#main3{
+    background-image: url("https://images.samsung.com/is/image/samsung/p5/sec/home/2020/p6/tab-contents/20200506/200507_GalaxyA51_launching_HomKV_PC_1440x810_bg.jpg?$ORIGIN_JPG$");
+    background-position: absolute;
+    background-repeat: no-repeat;
+    text-align: center;
+    width:100%;
+}
+
+
+#main3 h2 {
+    padding:20px;
+}
+.main3_h3{
+    height:50px;
+    margin:0;
+}
+.main3_blink_div {
+    height:50px;
+}
+
+.main3_div{
+    float:left;
+    color:white;
+    margin-right:20px;
+}
+
+.imo{
+    width:67px;
+    height: auto;
+    position: fixed;
+    bottom:150px;
+    right:70px;
+    border-radius: 10pc;
+    background : linear-gradient(to bottom, yellow, red)
+
+}
+
+
+
+
+
+
+
+.col-1 {width: 8.33%; }  /* 1칸 짜리 폭 */
+.col-2 {width: 16.66%; }  /* 2칸 짜리 폭 */
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
