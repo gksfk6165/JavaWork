@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>main</title>
+        <script src="jquery-3.5.1.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="fullpage.css"></script>
+        <script src = "fullpage.js"></script>
+    
+        <link rel="stylesheet" href="samsung.css">
+       
+    </head>
+<body>
+        <header class="col-12 header_height">
+            <nav class="col-12 header_height">
+                <div class="menu_bar col-12 header_height">
+                    <a class="menu_left col-1" href="index.html"><img src="img/samsung.jpg" style="width:100px; height:auto"
+                            alt=""></a>
+                    <ul class="menu_galaxy col-7">
+                        <li><a href=""><span class="sam_theme">갤럭시5G</span></a></li>
+                        <li><a href="#"><span class="sam_theme">모바일</span></a></li>
+                        <li><a href=""><span class="sam_theme">TV</span></a></li>
+                        <li><a href=""><span class="sam_theme">가전</span></a></li>
+                        <li><a href=""><span class="sam_theme">IT</span></a></li>
+                        <li><a href=""><span class="sam_theme">오디오</span></a></li>
+                        <li><a href=""><span class="sam_theme">이벤트</span></a></li>
+                        <li><a href=""><span class="sam_theme">닷컴핫딜</span></a></li>
+                    </ul>
+                    <div class="menu_right col-4">
+                        <ul class="menu_story col-7">
+                            <li><a href=""><span class="sam_theme">스토리</span></a></li>
+                            <li><a href=""><span class="sam_theme">멤버십</span></a></li>
+                            <li><a href=""><span class="sam_theme">고객지원</span></a></li>
+                            <li><a href=""><span class="sam_theme">비즈니스</span></a></li>
+                        </ul>
+                        <ul class="menu_img col-5 ">
+                            <li  class=" col-4 "><button><span class="login no_open">사진1</span></button>
+                            <ul style="display:none; width:200px;height:100px;border:1px solid black">
+                                <li><a href="login.html">로그인</a></li>
+                                <li><a>주문&배송 조회</a></li>
+                                
+                            </ul>
+                            </li>
+                            <li class="col-4"><button><span>사진2</span></button></li>
+                            <li class="col-4"><button><span>사진3</span></button></li>
+                        </ul>
+                    </div>
+    
+                </div>
+            </nav>
+        </header>
+        <section>
+            <div class="youtube col-12">
+                <div class="youtu_div col-2" style="height:30px;">갤럭시 S20</div>
+                <iframe class="youtu_div col-8" src="https://www.youtube.com/embed/44zebU6ilFQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="youtu_div col-2" style="height:30px;"></div>
+            </div>
+            <div class="phone_main col-12">
+                <div class="col-2 phone_back">
+                    <div class="phone_menu">
+                    <button class="phone_menu_btn"><span>유형</span></button>
+                    </div>
+                    <div class="galaxy_z phone">
+                        <input  class="radio_btn"type="radio" name ="phone" value="0">갤럭시 Z
+                    </div>
+                    <div class="galaxy_s phone">
+                        <input  class="radio_btn" type="radio" name ="phone" value="1">갤럭시 S
+                    </div>
+                    <div class="galaxy_note phone">
+                        <input  class="radio_btn"  type="radio" name ="phone" value="2">갤럭시 노트
+                    </div>
+                </div>
+                <div class="col-10 phone_list">
+                    <img id="pic1"src="img/samsung2.PNG" alt="">
+                </div>
+                </div>
+            </div>
+            <div class="imo_div off">
+                <a>
+                    <img class="imo imo_one" src="https://images.samsung.com/is/image/samsung/p5/sec/common/chatbot/2020/Floating__plus.png?$ORIGIN_PNG$" style="width:67px;height:67px">
+                </a>
+                <a>
+                    <img class="imo imo_two" src="https://images.samsung.com/is/content/samsung/p5/sec/common/chatbot/2020/chatbot_normal_0310.gif">
+                </a>
+                <a>
+                    <img class="imo imo_three" src="https://images.samsung.com/is/content/samsung/p5/sec/common/chatbot/2020/e-promoter_normal.gif?0.9126310537407103">
+                </a>
+                <a>
+                    <img class="imo imo_four" src="https://images.samsung.com/is/content/samsung/p5/sec/common/chatbot/2020/reservation_normal.gif">
+                </a>
+            </div>
+        </section>
+    <script>
+      $("input:radio[name='phone']").click(function(){
+          if($("input[name='phone']:checked").val() == "0"){
+                $("#pic1").attr("src","img/samsung1.PNG");
+          }else if ($("input[name='phone']:checked").val() == "1"){
+            $("#pic1").attr("src","img/samsung2.PNG");
+
+          }else{
+            $("#pic1").attr("src","img/samsung3.PNG");
+
+          }
+      })
+        
+    </script>
+
+
+    <script>
+        $(".imo_div").click(function(){
+            if($(".imo_div").hasClass("off")){
+                $(".imo_two").animate({
+                bottom :"+=75",
+                },1000);
+                $(".imo_three").animate({
+                    bottom :"+=150",
+                },1000);
+                $(".imo_four").animate({
+                    bottom :"+=225",
+                },1000);
+                $(".imo_div").removeClass("off");
+                $(".imo_div").addClass("on");
+            }else if($(".imo_div").hasClass("on")){
+                $(".imo_two").animate({
+                bottom :"-=75",
+                },1000);
+                $(".imo_three").animate({
+                    bottom :"-=150",
+                },1000);
+                $(".imo_four").animate({
+                    bottom :"-=225",
+                },1000);
+                $(".imo_div").removeClass("on");
+                $(".imo_div").addClass("off");
+            }
+        });
+
+        
+    </script>
+    <script>
+        $(function(){
+          $(".menu_img").click(function(){
+              if($(".login").hasClass("no_open")){
+                $('ul:first',this).show();
+                $(".login").removeClass("no_open");
+                $(".login").addClass("open");
+              }else{
+                $('ul:first',this).hide();
+                $(".login").removeClass("open");
+                $(".login").addClass("no_open");
+              }
+           
+
+        });
+    });
+        </script>
+</body>
+
+
+</html>

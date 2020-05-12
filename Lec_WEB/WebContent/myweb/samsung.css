@@ -8,6 +8,7 @@
             float: left;
         }
         header{
+            margin:0;
             position: fixed;
             z-index: 1;
             background-color: white;
@@ -47,84 +48,289 @@
             float: left;
         }
         button {
-      border: white;
-      background-color: white;
-      outline: 0;
-    }
+        border: white;
+        background-color: white;
+        outline: 0;
+        }
 
-    button:hover {
-      cursor: pointer;
-    }
+        button:hover {
+        cursor: pointer;
+        }
 
-    .section {
-      width: 100%;
-      height:auto;
-      
-    }
-
-    .section3 {
-      width: 100%;
-      height:auto;
-    }
-
-    .section3>div {
-      width: 25%;
-      float: left;
-      padding: 10px;
-
-    }
-    .section1{
-        text-align: center;
-    }
-
-    .a {
-      background-color: lightgray;
-      border-radius: 10px;
-      font-size: 10px;
-      height: 250px;
-    }
-    .samsung{
-        width:100%;
+        .section {
+        width: 100%;
         height:auto;
-    }
+        margin:0;
+        }
 
-#main3{
-    background-image: url("https://images.samsung.com/is/image/samsung/p5/sec/home/2020/p6/tab-contents/20200506/200507_GalaxyA51_launching_HomKV_PC_1440x810_bg.jpg?$ORIGIN_JPG$");
-    background-position: absolute;
+        .section3 {
+        width: 100%;
+        height:auto;
+        }
+
+        .section3>div {
+        width: 25%;
+        float: left;
+        padding: 10px;
+
+        }
+        .section1{
+            text-align: center;
+        }
+
+        .a {
+        background-color: lightgray;
+        border-radius: 10px;
+        font-size: 10px;
+        height: 250px;
+        }
+        .samsung{
+            width:100%;
+            height:auto;
+        }
+
+        #main3{
+            background-image: url("https://images.samsung.com/is/image/samsung/p5/sec/home/2020/p6/kv/0428/0428_BESPOKE_PC_1920_810.jpg?$ORIGIN_JPG$");
+            background-repeat: no-repeat;
+            text-align: center;
+        }
+
+
+        #main3 h2 {
+            padding:20px;
+        }
+        .main3_h3{
+            height:50px;
+            margin:0;
+        }
+        .main3_blink_div {
+            height:50px;
+        }
+
+        .main3_div{
+            float:left;
+            color:white;
+            margin-right:20px;
+        }
+
+        .imo{
+            width:67px;
+            height: auto;
+            position: fixed;
+            bottom:150px;
+            right:70px;
+            border-radius: 10pc;
+            background : linear-gradient(to bottom, white, blue)
+
+        }
+        .imo_one{
+            z-index: 4;
+        }
+        .imo_two{
+            z-index: 3;
+        }
+        .imo_three{
+            z-index: 2;
+        }
+        .imo_four{
+            z-index: 1;
+        }
+        .imo:hover{
+            cursor: -moz-zoom-out;
+        }
+
+.login:hover{
+    display:block;
+    
+}
+.menu_img{
+    padding:0;
+}
+.header_menu_li{
+    position: relative;
+}
+.header_menu_ul{
+    position: absolute;
+    top :40px;
+    right:40px;
+    border : 1px solid black;
+    border-radius: 10px;
+    z-index: 1;
+    background-color: lightgray;
+}
+     
+
+/* 로그인 화면 css*/
+
+#login_body{
+    background-image: url('https://images.samsung.com/sec/smartphones/galaxy-s20/design/images/galaxy-s20_design_water_device_gray.jpg');
     background-repeat: no-repeat;
+    position: relative;
+}
+h2{
+    color:blue;
+    margin:50px;
+}
+.login_menu{
+    width:500px;
+    height:600px;
+    background-color:white;
+    border: 2px solid black;
+    position: absolute;
+    right:100px;
+    top:150px;
+    border-radius: 20px;
+}
+.login_exit{
+    width:25px;
+    position: absolute;
+    top:20px;
+    right:20px;
+}
+.login_id{
+    margin:30px;
+}
+.login_pw{
+    margin:30px;
+}  
+.login_check{
+    margin-left:25px;
+}
+.login_submit{
+    width:300px;
+    height:40px;
+    margin:20px 0 0 80px;
+    background: linear-gradient(to right,#FBEFEF,#F6CED8);
+}
+.register{
+    margin:50px 150px 0px 150px;
     text-align: center;
-    width:100%;
+    border: 1px solid white;
+    background: linear-gradient(to left,#E0F2F7,#58D3F7);
+    color:black;
 }
 
-
-#main3 h2 {
-    padding:20px;
+/* 모바일 */
+.radio_btn{
+    width:20px;
+    height:20px;
 }
-.main3_h3{
-    height:50px;
-    margin:0;
+section{
+    position: relative;
 }
-.main3_blink_div {
-    height:50px;
-}
-
-.main3_div{
+.youtube{
+    margin-top:100px;
     float:left;
-    color:white;
+    height:600px;
+    background:linear-gradient(to top, skyblue,white);
+    display:block;
+}
+.youtube:after{
+    clear: both;
+}
+.youtu_div{
+    float:left;
+    height:600px;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 10;
+}
+.phone_main{
+    float:left;
+    height:600px;
+}
+.phone_back{
+    background: linear-gradient(to right,#D8D8D8,#FAFAFA,#D8D8D8);
+    height:600px;
+    display: inline-block;
+    float:left;
+    
+}
+.phone_menu_btn{
+    width:100%;
+    height:40px;
+    font-weight: bold;
+    text-align: left;
+    font-size: 20px;
+    background: linear-gradient(to right,#D8D8D8,#FAFAFA,#D8D8D8);
+
+}
+.phone{
+    font-size:30px;
+
+}
+.phone >input{
     margin-right:20px;
 }
-
-.imo{
-    width:67px;
-    height: auto;
-    position: fixed;
-    bottom:150px;
-    right:70px;
-    border-radius: 10pc;
-    background : linear-gradient(to bottom, yellow, red)
+.phone_list{
+    width: 100%;
+    height:600px;
+    display: inline-block;
+    background: linear-gradient(to right,#D8D8D8,#FAFAFA,#D8D8D8);
 
 }
+/* 회원가입 */
+.rere{
+    float:left;
+    height:1000px;
+    
+}
+.register_menu{
+    text-align: center;
+    margin-top:50px;
+    border: 1px solid black;
+    background:linear-gradient(to bottom,#FAFAFA,#F2F2F2);
+    padding:50px;
+}
+.register_name{
+    font-size: 50px;
+}
+.register_terms{
+    margin-top:50px;
+    overflow:scroll;
+    height:150px;
+    background-color: white;
+    padding: 30px;
+}
+.register_check{
+    float:left;
+    width:20px;
+    height:20px;
 
+}
+.register_check::after
+{
+    clear: both;
+}
+.check_all{
+    float:left;
+    width:20px;
+    height:20px;
+}
+.register_terms_div{
+    float:left;
+}
+.register_span{
+    color: skyblue;
+    text-decoration: underline;
+}
+.register_agree{
+    width:100%;
+    height:50px;
+    margin:15px;
+    border-radius: 10px;
+    line-height: 50px;
+    background :linear-gradient(to right,#F8EFFB,#A9BCF5)
+}
+.register_no_agree{
+    width:100%;
+    height:50px;
+    margin:15px;
+    border-radius: 10px;
+    line-height: 50px;
+    background :linear-gradient(to right,#F8EFFB,#F7819F)
+
+}
 
 
 

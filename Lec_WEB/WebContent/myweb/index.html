@@ -22,8 +22,8 @@
                 <a class="menu_left col-1" href="#"><img src="img/samsung.jpg" style="width:100px; height:auto"
                         alt=""></a>
                 <ul class="menu_galaxy col-7">
-                    <li><a href=""><span class="sam_theme">갤럭시5G</span></a></li>
-                    <li><a href=""><span class="sam_theme">모바일</span></a></li>
+                    <li><a href="#"><span class="sam_theme">갤럭시5G</span></a></li>
+                    <li><a href="mobile.html"><span class="sam_theme">모바일</span></a></li>
                     <li><a href=""><span class="sam_theme">TV</span></a></li>
                     <li><a href=""><span class="sam_theme">가전</span></a></li>
                     <li><a href=""><span class="sam_theme">IT</span></a></li>
@@ -38,8 +38,14 @@
                         <li><a href=""><span class="sam_theme">고객지원</span></a></li>
                         <li><a href=""><span class="sam_theme">비즈니스</span></a></li>
                     </ul>
-                    <ul class="menu_img col-5">
-                        <li class="col-4"><button><span>사진1</span></button></li>
+                    <ul class="menu_img col-5 ">
+                        <li class="col-4 "><button><span class="header_menu_li login no_open">사진1</span></button>
+                        <ul class="header_menu_ul"style="display:none; width:200px;height:100px;border:1px solid black">
+                            <li><a href="login.html">로그인</a></li>
+                            <li><a>주문&배송 조회</a></li>
+                            
+                        </ul>
+                        </li>
                         <li class="col-4"><button><span>사진2</span></button></li>
                         <li class="col-4"><button><span>사진3</span></button></li>
                     </ul>
@@ -48,7 +54,7 @@
             </div>
         </nav>
     </header>
-    <div id="fullpage" class="main_div col-12">
+    <div id="fullpage" class="main_div">
         <div class="single-item section">
             <div><img class="samsung" src="//images.samsung.com/is/image/samsung/p5/sec/home/2020/p6/kv/20200507/home_kv_01_pc_1920x810.jpg?$ORIGIN_JPG$" alt=""></div>
             <div><img class="samsung" src="//images.samsung.com/is/image/samsung/p5/sec/home/2020/p6/kv/20200429/20200501_galaxy-z-flip_gold_MainKV_PC_bg.jpg?$ORIGIN_JPG$" alt=""></div>
@@ -150,25 +156,36 @@
             </div>
 
         </div>
-        <div id="main3" class="section">
+        <div id="main3" class="section" >
              <h2 style="color:white">모바일 & IT</h2>
-             <div class= "main3_h3 col-12">
-                <div class="main3_div col-3" style="height:40px;"></div>
-                <div class="main3_div col-6" style="height:40px;">
+             <div class= "main3_h3">
+                <div class="main3_div col-4" style="height:40px;"></div>
+                <div class="main3_div col-7" style="height:40px;">
                     <div class="main3_div ">GalaxyA51</div>
                     <div class="main3_div ">갤럭시 탭 S6 Lite</div>
                     <div class="main3_div ">살롱 데 포토그라프</div>
                     <div class="main3_div ">살롱 데 포토그라프</div>
                 </div>
-                <div class="main3_div col-3" style="height:40px;"></div>
+                <div class="main3_div col-1" style="height:40px;"></div>
             </div>   
         </div>
     </div>
-    <div class="imo">
+    <div class="imo_div off">
         <a>
-            <img src="https://images.samsung.com/is/image/samsung/p5/sec/common/chatbot/2020/Floating__plus.png?$ORIGIN_PNG$" style="width:67px;height:67px">
+            <img class="imo imo_one" src="https://images.samsung.com/is/image/samsung/p5/sec/common/chatbot/2020/Floating__plus.png?$ORIGIN_PNG$" style="width:67px;height:67px">
+        </a>
+        <a>
+            <img class="imo imo_two" src="https://images.samsung.com/is/content/samsung/p5/sec/common/chatbot/2020/chatbot_normal_0310.gif">
+        </a>
+        <a>
+            <img class="imo imo_three" src="https://images.samsung.com/is/content/samsung/p5/sec/common/chatbot/2020/e-promoter_normal.gif?0.9126310537407103">
+        </a>
+        <a>
+            <img class="imo imo_four" src="https://images.samsung.com/is/content/samsung/p5/sec/common/chatbot/2020/reservation_normal.gif">
         </a>
     </div>
+
+    
 
 
 
@@ -193,12 +210,59 @@
             });
         })
     </script>
+    <script>
+        $(".imo_div").click(function(){
+            if($(".imo_div").hasClass("off")){
+                $(".imo_two").animate({
+                bottom :"+=75",
+                },1000);
+                $(".imo_three").animate({
+                    bottom :"+=150",
+                },1000);
+                $(".imo_four").animate({
+                    bottom :"+=225",
+                },1000);
+                $(".imo_div").removeClass("off");
+                $(".imo_div").addClass("on");
+            }else if($(".imo_div").hasClass("on")){
+                $(".imo_two").animate({
+                bottom :"-=75",
+                },1000);
+                $(".imo_three").animate({
+                    bottom :"-=150",
+                },1000);
+                $(".imo_four").animate({
+                    bottom :"-=225",
+                },1000);
+                $(".imo_div").removeClass("on");
+                $(".imo_div").addClass("off");
+            }
+        });
+
+        
+    </script>
+    <script>
+        $(function(){
+          $(".menu_img").click(function(){
+              if($(".login").hasClass("no_open")){
+                $('ul:first',this).show();
+                $(".login").removeClass("no_open");
+                $(".login").addClass("open");
+              }else{
+                $('ul:first',this).hide();
+                $(".login").removeClass("open");
+                $(".login").addClass("no_open");
+              }
+           
+
+        });
+    });
+        </script>
 
     <footer>
 
     </footer>
    
-
 </body>
 
 </html>
