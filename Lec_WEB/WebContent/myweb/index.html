@@ -12,6 +12,8 @@
     <script src = "fullpage.js"></script>
 
     <link rel="stylesheet" href="samsung.css">
+    <script src="samsung.js"></script>
+
    
 </head>
 
@@ -19,10 +21,10 @@
     <header class="col-12 header_height">
         <nav class="col-12 header_height">
             <div class="menu_bar col-12 header_height">
-                <a class="menu_left col-1" href="#"><img src="img/samsung.jpg" style="width:100px; height:auto"
+                <a class="menu_left col-1" href="index.html"><img src="img/samsung.jpg" style="width:100px; height:auto"
                         alt=""></a>
                 <ul class="menu_galaxy col-7">
-                    <li><a href="#"><span class="sam_theme">갤럭시5G</span></a></li>
+                    <li><a href=""><span class="sam_theme">갤럭시5G</span></a></li>
                     <li><a href="mobile.html"><span class="sam_theme">모바일</span></a></li>
                     <li><a href=""><span class="sam_theme">TV</span></a></li>
                     <li><a href=""><span class="sam_theme">가전</span></a></li>
@@ -39,15 +41,17 @@
                         <li><a href=""><span class="sam_theme">비즈니스</span></a></li>
                     </ul>
                     <ul class="menu_img col-5 ">
-                        <li class="col-4 "><button><span class="header_menu_li login no_open">사진1</span></button>
-                        <ul class="header_menu_ul"style="display:none; width:200px;height:100px;border:1px solid black">
-                            <li><a href="login.html">로그인</a></li>
-                            <li><a>주문&배송 조회</a></li>
-                            
-                        </ul>
+                        <li  class="header_img col-4 "><button ><span class="login no_open"><img src="img/pic1.PNG" alt=""></span></button>
+                   
+                            <ul  class="header_menu_ul"style="display:none; width:200px;height:100px;border:1px solid black">
+                                <li><a href="login.html">로그인</a></li>
+                                <li><a>주문&배송 조회</a></li>
+                                
+                            </ul>
+            
                         </li>
-                        <li class="col-4"><button><span>사진2</span></button></li>
-                        <li class="col-4"><button><span>사진3</span></button></li>
+                        <li class="col-4"><button><span><img src="img/pic2.PNG" alt=""></span></button></li>
+                        <li class="col-4"><button><span><img src="img/pic3.PNG" alt=""></span></button></li>
                     </ul>
                 </div>
 
@@ -155,20 +159,16 @@
                 </div>
             </div>
 
+            </div>
+            <div class="section" >
+            <div id="main3" class="col-12" style="position: relative;">
+                <img style=" width:100%;height:auto;" class="section3_float" src="https://images.samsung.com/is/image/samsung/p5/sec/home/2020/p6/kv/0428/0428_BESPOKE_PC_1920_810.jpg?$ORIGIN_JPG$" alt="">
+                <div style="position: absolute;left:50%; padding-top:50px;color:white; ">안녕하세요</div>
+                
+             </div>
+           </div>    
         </div>
-        <div id="main3" class="section" >
-             <h2 style="color:white">모바일 & IT</h2>
-             <div class= "main3_h3">
-                <div class="main3_div col-4" style="height:40px;"></div>
-                <div class="main3_div col-7" style="height:40px;">
-                    <div class="main3_div ">GalaxyA51</div>
-                    <div class="main3_div ">갤럭시 탭 S6 Lite</div>
-                    <div class="main3_div ">살롱 데 포토그라프</div>
-                    <div class="main3_div ">살롱 데 포토그라프</div>
-                </div>
-                <div class="main3_div col-1" style="height:40px;"></div>
-            </div>   
-        </div>
+        
     </div>
     <div class="imo_div off">
         <a>
@@ -185,79 +185,7 @@
         </a>
     </div>
 
-    
 
-
-
-
-
-
-    <script>
-        $(document).ready(function(){
-            $('.single-item').slick({
-                infinite: true,
-                speed: 1000,
-                slidesToShow: 1,
-                adaptiveHeight: true,
-                autoplay:true,
-                auotoplaySpeed:1000,
-                arrows:false
-            });
-
-            $('#fullpage').fullpage({
-                autoScrolling:true,
-	            scrollHorizontally: true
-            });
-        })
-    </script>
-    <script>
-        $(".imo_div").click(function(){
-            if($(".imo_div").hasClass("off")){
-                $(".imo_two").animate({
-                bottom :"+=75",
-                },1000);
-                $(".imo_three").animate({
-                    bottom :"+=150",
-                },1000);
-                $(".imo_four").animate({
-                    bottom :"+=225",
-                },1000);
-                $(".imo_div").removeClass("off");
-                $(".imo_div").addClass("on");
-            }else if($(".imo_div").hasClass("on")){
-                $(".imo_two").animate({
-                bottom :"-=75",
-                },1000);
-                $(".imo_three").animate({
-                    bottom :"-=150",
-                },1000);
-                $(".imo_four").animate({
-                    bottom :"-=225",
-                },1000);
-                $(".imo_div").removeClass("on");
-                $(".imo_div").addClass("off");
-            }
-        });
-
-        
-    </script>
-    <script>
-        $(function(){
-          $(".menu_img").click(function(){
-              if($(".login").hasClass("no_open")){
-                $('ul:first',this).show();
-                $(".login").removeClass("no_open");
-                $(".login").addClass("open");
-              }else{
-                $('ul:first',this).hide();
-                $(".login").removeClass("open");
-                $(".login").addClass("no_open");
-              }
-           
-
-        });
-    });
-        </script>
 
     <footer>
 

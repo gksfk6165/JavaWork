@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>register</title>
+    <title>main</title>
     <script src="jquery-3.5.1.min.js"></script>
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
@@ -12,6 +12,7 @@
     <script src = "fullpage.js"></script>
 
     <link rel="stylesheet" href="samsung.css">
+    <script src="samsung.js"></script>
 </head>
 
 <body>
@@ -440,29 +441,11 @@
         <hr style="clear:both">
         <div style="height:50px"><input class="check_all" type="checkbox" name ="term2" > <div class="register_terms_div">모두 동의하기</div></div>
         <button class="register_agree">동의</button>
-        <button class="register_no_agree">거부</button>
+        <button class="register_no_agree">뒤로가기</button>
 
     </div>
     <div class="col-2 rere"></div>
-    
-    <script>
-       $(".register_agree").click(function(){
-            
-        if($("input:checkbox[name=term1]:checked").length
-                            !=$("input:checkbox[name=term1]").length){
-                alert("약관 전부 동의해주세요!");
-        }else{
-            alert("굿")
-        }
 
-       });
-
-       $(".register_no_agree").click(function(){
-                location.href='login.html';
-       })
-
-
-    </script>
 
 </body>
 

@@ -1,0 +1,18 @@
+{
+    "phone" :[
+        {"ID" : "S","name" : "갤럭시 S6","value1":"0","cal":"0","image" : "http://imgnews.naver.net/image/020/2015/03/02/69893431.1_99_20150302100103.jpg"  },
+        {"ID" : "S","name" : "갤럭시 S7","value1":"0","cal":"1","image" :  "http://blogfiles.naver.net/20160222_268/etland_wb_1456121565582tMFIt_JPEG/s7.jpg"  },
+        {"ID" : "S","name" : "갤럭시 S8","value1":"0","cal":"2","image" :  "http://imgnews.naver.net/image/018/2017/04/15/0003800067_001_20170415060205777.jpg"  },
+        {"ID" : "S","name" : "갤럭시 S9","value1":"0","cal":"3","image" :  "http://blogfiles.naver.net/MjAyMDAzMDNfMTQ3/MDAxNTgzMjM0NTI5MzEy.UmEtx0G1ftY5E99A1WbAFgFu8STkv4KYp11FvU3D9ugg.vqBJyTfXu1eVvd8qqt8WjNkY_VFUcXUuZJt5ytuKFZog.PNG.ooopsioi/429e0b16-c688-47f7-966e-41d7aaba1532.jpg"  },
+        {"ID" : "S","name" : "갤럭시 S10","value1":"0","cal":"4","image" :  "http://blogfiles.naver.net/MjAyMDAzMTVfMjcz/MDAxNTg0MjcxNDM2MDUw.dfM1x3GyQuC8s6zQkja5E0KYg8eHJYDGGTpK5DXKAZsg.JB_Yrp6Q84zy-WDesLKx0euVOr-vJz3lrrqsu6OfsPUg.JPEG.ivedot/1e8b4bda961b0284c87ad9f89a8b29423a0b9b1f85512b.jpg"  },
+        {"ID" : "S","name" : "갤럭시 S11","value1":"0","cal":"5","image" : "http://blogfiles.naver.net/MjAxOTEyMTBfMTQx/MDAxNTc1OTcxMzAxMTAy.pX2j151F8AdxvzuWzsSOmj6RpO3i3w8WQptxt7OnrBIg.kcWVAFxsGsSVH3gLdqQDPa6QSXY4-j-9o88zrSim1T4g.PNG.kihyuk38/%B0%B6%B7%B0%BD%C3S11_%C5%A9%B1%E2Screenshot_2019-11-27_at_17.04.54.png"  },
+        {"ID" : "S","name" : "갤럭시 S20","value1":"0","cal":"6","image" : "http://blogfiles.naver.net/MjAyMDAyMTdfMjgw/MDAxNTgxOTM0ODQ4NjEx.dxhgednMqm8D155vmxEOm_lLS94vaZa9VRU8XwVzpV0g.FiaeUyEu91CrFia5ne6zsECJLTbjoPUOmhjUtJAu638g.PNG.newmediapd/20200217_%BB%EF%BC%BA%C0%FC%C0%DA_%B0%B6%B7%B0%BD%C3_S20_%BF%EF%C6%AE%B6%F3_%C0%DA%B1%DE%C1%A6%C6%F9_256G.png"  },
+        {"ID" : "N","name" : "갤럭시 노트6","value1":"1","cal":"7","image" : "http://imgnews.naver.net/image/417/2016/05/10/2016051015058085314_1_99_20160510152605.jpg"  },
+        {"ID" : "N","name" : "갤럭시 노트7","value1":"1","cal":"8","image" : "http://post.phinf.naver.net/20160804_199/1470294386604HVLda_JPEG/Iu0hQ72ia-zrTUUFVM7HBzIVexqA.jpg"  },
+        {"ID" : "N","name" : "갤럭시 노트8","value1":"1","cal":"9","image" : "https://search.pstatic.net/common/?src=http%3A%2F%2Fpost.phinf.naver.net%2FMjAxOTA3MDdfNDMg%2FMDAxNTYyNDc0NzgzNzMx.aX_4AoRLxVQ605OolMoCSNrSFaGKC5TFFOQAfiU5D3Eg.4CmiifIFFUBJwW4UnQEtMgQRGwmEec0ZDusivd0vRoEg.JPEG%2FIoSNyfUx3pAQU93GAGiMkZelYKaA.jpg&type=b400"  },
+        {"ID" : "N","name" : "갤럭시 노트9","value1":"1","cal":"10","image" : "http://post.phinf.naver.net/MjAxODA4MTBfMTE1/MDAxNTMzODczODQzOTk1.1sOLfdI4jkH87ak_V1gr0gFjidEOI9xb84L15U_grbQg.9vdA07d5sKWz89guH_gMm6m4w4T6-BYbycxWNHvmO_cg.PNG/IsB5Ydu1TxrpPAQ2_LO5G4I2e2dE.jpg"  },
+        {"ID" : "N","name" : "갤럭시 노트10","value1":"1","cal":"11","image" : "http://blogfiles.naver.net/MjAyMDAzMTZfMjY5/MDAxNTg0MzU3OTc3ODg3.Mmp99OxpZ3wPwnEZBVafqg4wSK5h21buMo-FOkkc6sgg.RrFKSpaKPBNHQKWs3kcOar112vqsFJqjagdRFvKD-nQg.JPEG.hiposu7gae3/%B0%B6%B7%B0%BD%C3%B3%EB%C6%AE10_%BD%BA%C6%E5-1.jpg"  },
+        {"ID" : "Z","name" : "갤럭시 Z플립","value1":"2","cal":"12","image" : "http://imgnews.naver.net/image/5774/2020/02/20/0000001939_003_20200220160643503.jpg"  },
+        {"ID" : "A","name": "갤럭시 A90","value1":"3","cal":"13","image": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAxOTA5MDRfNDMg%2FMDAxNTY3NTY3MTA4ODA4.Fyi7j2ydnh_jXG_J1SW9gfxT5eMwbM2hK2Mlhrnh1iUg.pHvSrcTGZfDd5RKKPXjwGxcwrFFNL0ro_4dMT6-DATUg.PNG.phone2phone%2F20190904_101203.png&type=b400"}    ]
+    
+}

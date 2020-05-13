@@ -10,6 +10,7 @@
         header{
             margin:0;
             position: fixed;
+            top:0%;
             z-index: 1;
             background-color: white;
         }
@@ -33,7 +34,14 @@
         .main_div{
             position: absolute;
             top:100px;
-
+        
+        }
+        .section3_float{
+            float:left;
+        }
+        .section3_div{
+            position: relative;
+            z-index: 1;
         }
         .sam_theme {
             font-size: 10px;
@@ -90,8 +98,8 @@
         }
 
         #main3{
-            background-image: url("https://images.samsung.com/is/image/samsung/p5/sec/home/2020/p6/kv/0428/0428_BESPOKE_PC_1920_810.jpg?$ORIGIN_JPG$");
-            background-repeat: no-repeat;
+            /* background-image: url("https://images.samsung.com/is/image/samsung/p5/sec/home/2020/p6/kv/0428/0428_BESPOKE_PC_1920_810.jpg?$ORIGIN_JPG$");
+            background-repeat: no-repeat; */
             text-align: center;
         }
 
@@ -156,7 +164,12 @@
     border : 1px solid black;
     border-radius: 10px;
     z-index: 1;
-    background-color: lightgray;
+    background:linear-gradient(to right,#FFFFFF,#D8D8D8);
+    padding:0;
+}
+.header_menu_ul>li{
+    line-height: 50px;
+    margin-left:30px;
 }
      
 
@@ -232,43 +245,28 @@ section{
     float:left;
     height:600px;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 30PX;
+    line-height: 50px;
     line-height: 10;
 }
-.phone_main{
-    float:left;
-    height:600px;
+.phone_check_img{
+    font-size: 15px;
 }
-.phone_back{
-    background: linear-gradient(to right,#D8D8D8,#FAFAFA,#D8D8D8);
-    height:600px;
-    display: inline-block;
+
+
+
+.phone{
     float:left;
     
 }
-.phone_menu_btn{
-    width:100%;
-    height:40px;
-    font-weight: bold;
-    text-align: left;
-    font-size: 20px;
-    background: linear-gradient(to right,#D8D8D8,#FAFAFA,#D8D8D8);
+.new_box{
+    float:left;
+    font-size:20px;
+}
+.phone_img_hide img{
+    float:left;
+}
 
-}
-.phone{
-    font-size:30px;
-
-}
-.phone >input{
-    margin-right:20px;
-}
-.phone_list{
-    width: 100%;
-    height:600px;
-    display: inline-block;
-    background: linear-gradient(to right,#D8D8D8,#FAFAFA,#D8D8D8);
-
-}
 /* 회원가입 */
 .rere{
     float:left;
@@ -331,6 +329,52 @@ section{
     background :linear-gradient(to right,#F8EFFB,#F7819F)
 
 }
+/* 아이디 생성 */
+
+.create_div{
+    float:left;
+    height:1000px;
+}
+.create_menu{
+    background:linear-gradient(to bottom,#FAFAFA,#F2F2F2);
+    text-align: center;
+    border-radius: 20px;
+    border : 3px solid black;
+}
+.main_h2{
+    font-size: 40px;
+    font-weight: bold; 
+}
+.create{
+    font-size:30px;
+    text-align: left;
+    margin-top:50px;
+}
+.create_btn{
+    margin-top:10px;
+    width:100%;
+    height:40px;
+    
+}
+.create_ok{
+    margin-top:100px;
+    background: linear-gradient(to left,#EFEFFB,#A9F5D0,#58D3F7);
+    width:100%;
+    height:70px;
+    border : 1px solid #5882FA;
+    border-radius: 10px;
+}
+.create_body{
+    background:linear-gradient(to right,#5882FA,#0040FF,#58D3F7,#5882FA,#0040FF,#58D3F7)
+    
+}
+.login_exit2{
+    width:25px;
+    position: absolute;
+    top:30px;
+    right:250px;
+}
+
 
 
 
