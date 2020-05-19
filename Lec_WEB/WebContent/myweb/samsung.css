@@ -1,180 +1,532 @@
+/* 메인 페이지 & 공용 헤더 */
 
-        * {
-            box-sizing: border-box;
-        }
+*{
+    box-sizing: border-box;
+}
+.col-1 {width: 8.33%; }  /* 1칸 짜리 폭 */
+.col-2 {width: 16.66%; }  /* 2칸 짜리 폭 */
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
 
-        .menu_bar ul {
-            list-style: none;
-            float: left;
-        }
-        header{
-            margin:0;
-            position: fixed;
-            top:0%;
-            z-index: 1;
-            background-color: white;
-        }
-        .header_height{
-            height: 80px;
-            
-        }
+.menu_left, .menu_center,.menu_gal,.menu_mo,.menu_tv,.menu_tv,.menu_right{
+    float:left;
+    font-size:30px;
+}
+header{
+    position : fixed;
+    top : 0%;
+    left: 0%;
+    right:0%;
+    padding: 20px;
+    border : 1px solid black;
+    background-color: white;
+    z-index: 1;
+}
+.login{
+    width:50px;
+    height:50px;
+}
+.menu_left{
+    float:left;
+    font-weight:bold;
+    color: blue;
+    text-align: center;
+}
+.menu_center > div{
+    font-weight:bold;
+}
+.menu_right img {
+   margin: 0 40px 0 40px;
+}
+section{
+    margin-top:170px;
+}
+header a{
+    text-decoration: none;
+    color:black;
+}
 
-        .menu_bar li {
-            float: left;
-        }
 
-        .menu_bar>.menu_right {
-            float: left;
-        }
 
-        a {
-            text-decoration: none;
-            color: black;
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+max-width: 1400px;
+position: relative;
+margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+padding: 16px;
+margin-top: -22px;
+color: white;
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+color: #f2f2f2;
+font-size: 15px;
+padding: 8px 12px;
+position: absolute;
+bottom: 8px;
+width: 100%;
+text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+color: #f2f2f2;
+font-size: 12px;
+padding: 8px 12px;
+position: absolute;
+top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+cursor: pointer;
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+-webkit-animation-name: fade;
+-webkit-animation-duration: 1.5s;
+animation-name: fade;
+animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+from {opacity: .4} 
+to {opacity: 1}
+}
+
+@keyframes fade {
+from {opacity: .4} 
+to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+.prev, .next,.text {font-size: 11px}
+}
+article{
+margin-bottom:200px;
+}
+
+.section_2_img{
+width:600px;
+height:600px;
+}
+.article_div{
+float:left;
+padding: 20px;
+}
+.article_div2{
+float:left;
+}
+.article_start{
+text-decoration: none;
+color:black;
+padding:4px;
+font-size: 15px;
+border :2px solid blue;
+border-radius: 10pc;
+
+}
+.section_2 >div{
+float:left;
+height:600px;
+}
+.section_3 > div{
+float: left;
+}
+.section_3_div{
+height:600px;
+position: relative;
+z-index:-1;
+
+
+}
+.article2_img{
+position: absolute;
+z-index: -1;
+width:100%;
+width:1400px;
+height:700px;
+}
+.article2_div{
+position: absolute;
+z-index: 1;
+font-size:30px;
+
+}
+.article2_div{
+color:white;
+top:200px;
+left:50px;
+}
+.article2_tv{
+border :3px solid hsl(197, 95%, 48%);
+color:white;
+border-radius: 10px;
+padding:5px;
+text-decoration: none;
+
+}
+.footer_div1
+{
+margin:0 100px 0 100px;
+
+}
+.footer_div2{
+padding:20px;
+margin: 0 100px 0 100px;
+}
+.footer_div2  ul li{
+list-style: none;
+float:left;
+margin-right: 60px;
+font-weight: bold;
+}
+/* 반응형웹 */
+@media screen and (max-width:1400px){
+    .menu_left, .menu_center,.menu_gal,.menu_mo,.menu_tv,.menu_tv,.menu_right{
+        float:left;
+        font-size:15px;
+    }
+    .login{
+        width:30px;
+        height:30px;
+    }
+    .section_2_img{
+        width:400px;
+        height:400px;
         }
-        .main_div{
-            position: absolute;
-            top:100px;
+    .article_div2{
+        font-size:15px;
+        }
+    .article2_div{
+        font-size: 15px;
+    }
+
+}
+@media screen and (max-width:800px){
+    .menu_left, .menu_center,.menu_gal,.menu_mo,.menu_tv,.menu_tv,.menu_right{
+        float:left;
+        font-size:10px;
+    }
+    .login{
+        width:20px;
+        height:20px;
+    }
+    .menu_right img {
+        margin:0 20px 0 20px;
+        
+     }
+     .section_2_img{
+        widows:300px;
+        height:300px;
+        padding:10px;
+        }
+    .article_div2{
+        font-size:15px;
+        padding-left:30px;
+        }
+     .article2_div{
+            font-size: 15px;
+            top:50px;
+            left:10px;
+    }
+    footer{
+        font-size:10px;
+    }
+}
+@media screen and (max-width:750px){
+    .section_3_div{
+        width:100%;
+    }
+    .article_div{
+        float:none;
+        width:100%;
+    }
+    .section_2_img{
+        float:block;
+
+    }
+    .article_div2{
+        width:100%;
+        position: relative;
+        top:50px;
+        font-size:12px;
+        padding:0px;
+        margin-left:100px;
+    }
+    .article_start{
+        text-decoration: none;
+        color:black;
+        padding:10px;
+        font-size: 30px;
+        border :4px solid blue;
+        border-radius: 10pc;
         
         }
-        .section3_float{
-            float:left;
+        .article2_img{
+            height:300px;
         }
-        .section3_div{
-            position: relative;
-            z-index: 1;
+        .article2_div >  h2{
+            margin-top:10px;
+            
         }
-        .sam_theme {
-            font-size: 10px;
-            margin: 0 0 0 10px;
+        footer{
+            font-size:10px;
         }
-
-        .menu_left {
-            float: left;
-        }
-
-        .slide {
-            float: left;
-        }
-        button {
-        border: white;
-        background-color: white;
-        outline: 0;
-        }
-
-        button:hover {
-        cursor: pointer;
-        }
-
-        .section {
-        width: 100%;
-        height:auto;
-        margin:0;
-        }
-
-        .section3 {
-        width: 100%;
-        height:auto;
-        }
-
-        .section3>div {
-        width: 25%;
-        float: left;
-        padding: 10px;
-
-        }
-        .section1{
-            text-align: center;
-        }
-
-        .a {
-        background-color: lightgray;
-        border-radius: 10px;
-        font-size: 10px;
-        height: 250px;
-        }
-        .samsung{
-            width:100%;
-            height:auto;
-        }
-
-        #main3{
-            /* background-image: url("https://images.samsung.com/is/image/samsung/p5/sec/home/2020/p6/kv/0428/0428_BESPOKE_PC_1920_810.jpg?$ORIGIN_JPG$");
-            background-repeat: no-repeat; */
-            text-align: center;
-        }
-
-
-        #main3 h2 {
-            padding:20px;
-        }
-        .main3_h3{
-            height:50px;
+        .section_3_div{
             margin:0;
         }
-        .main3_blink_div {
-            height:50px;
-        }
-
-        .main3_div{
-            float:left;
-            color:white;
-            margin-right:20px;
-        }
-
-        .imo{
-            width:67px;
-            height: auto;
-            position: fixed;
-            bottom:150px;
-            right:70px;
-            border-radius: 10pc;
-            background : linear-gradient(to bottom, white, blue)
-
-        }
-        .imo_one{
-            z-index: 4;
-        }
-        .imo_two{
-            z-index: 3;
-        }
-        .imo_three{
-            z-index: 2;
-        }
-        .imo_four{
-            z-index: 1;
-        }
-        .imo:hover{
-            cursor: -moz-zoom-out;
-        }
-
-.login:hover{
-    display:block;
-    
 }
-.menu_img{
-    padding:0;
+.imo{
+    width:67px;
+    height: auto;
+    position: fixed;
+    bottom:50px;
+    right:50px;
+    border-radius: 10pc;
+    background : linear-gradient(to bottom, white, blue)
+
 }
-.header_menu_li{
-    position: relative;
+.imo_one{
+    z-index: 4;
 }
-.header_menu_ul{
-    position: absolute;
-    top :40px;
-    right:40px;
-    border : 1px solid black;
-    border-radius: 10px;
+.imo_two{
+    z-index: 3;
+}
+.imo_three{
+    z-index: 2;
+}
+.imo_four{
     z-index: 1;
-    background:linear-gradient(to right,#FFFFFF,#D8D8D8);
+}
+.imo:hover{
+    cursor: -moz-zoom-out;
+}
+
+
+
+
+/* 모바일 페이지 */
+/* 유튜브 */
+.youtube_div{
+    margin : 0 200px 0 200px;
+    height:600px;
+}
+.article_1{
+    border-bottom:2px solid gray;
+    margin-bottom:100px;
+}
+.youtube_div > iframe{
+    float:left;
+    width:800px;
+    height:500px;
+}
+.youtube_div >div {
+    float:left;
+}
+.youtube_div h2{
+    margin-top:80px;
+    margin-left:100px;
+    font-size:50px
+}
+.youtube_div img {
+    width: 300px;
+    margin-left:100px;
+}
+
+/* 체크박스 */
+.article_2{
+    margin-bottom:100px;
+}
+.phone_checking{
+    margin :20px 0 20px 10px;
+}
+.ab{
+ width: 25px;
+ height:25px;
+}
+section{
+    font-size:25px;
+}
+.phone_hide input{
+    width:25px;
+    height: 25px;
+    margin:0;
     padding:0;
 }
-.header_menu_ul>li{
-    line-height: 50px;
-    margin-left:30px;
+.phone_hide div{
+    margin-top:23px;
 }
-     
+.phone{
+    float:left;
+}
+/* 사진들 */
+.phone_img{
+    margin:10px;
+    float: left;
+    border : 5px solid plum;
+    border-radius: 5px;
+    color: black;
+    font-size:30px;
+}
+.phone_img_hide{
+    margin-bottom:500px;
+}
+.article_2{
+    height:1000px;
+}
+.mobile_section{
+    margin-bottom:500px;
+}
+.phone_hide input::after{
+    clear:both;
+ }
+ .youtube_div::after{
+     clear:both;
+ }
 
-/* 로그인 화면 css*/
+/* 반응형 */
+@media screen and (max-width:1400px){
+    .youtube_div{
+        margin:0px;
+        height:600px;
+    }
+    .youtube_div > iframe{
+       
+        margin-left:50px;
+        float:left;
+        width:600px;
+        height:500px;
+    }
+    .youtube_div img {
+        width: 200px;
+        height: 200px;
+        margin-left:0px;
+    }
+    .youtube_div h2{
+        font-size:15px;
+    }
+    .ab{
+        width: 20px;
+        height:20px;
+       }
+       section{
+           font-size:20px;
+       }
+}
+@media screen and (max-width:1000px){
+   .youtube_div >iframe{
+        width:100%;
+        margin-left:0px;
+        float:none;
+    }
+    .youtube_div img {
+        width: 80%;
+        height: 200px;
+        margin-left:100px;
+    }
+    .youtube_div h2{
+        font-size:30px;
+        text-align: center;
+        margin-left:100px;
+    }
+    .youtube_div {
+        height:1000px;
+    }
+   
+   
+}
+@media screen and (max-width:850px){    
+    .fisrt_div{
+        width:100%;
+    }
+    .phone{
+        width:100%;
+    }
+    .phone_checking{
+        float:left;
+        margin-right:10px;
 
+    }
+    .phone_hide{
+        width:100%;
+    }
+    .phone_hide input{
+        margin-left:13px;
+    }
+    .box_min{
+        float:left;
+        margin-right:10px;
+    }
+    .phone_hide input{
+        width: 20px;
+        height:20px;
+    }
+    .phone_img_hide{
+        margin-top:100px;
+    }
+}
+
+@media screen  and (max-width:500px){
+    .mobile_li{
+        display:none;
+    }
+}
+
+
+
+/*  */
 #login_body{
     background-image: url('https://images.samsung.com/sec/smartphones/galaxy-s20/design/images/galaxy-s20_design_water_device_gray.jpg');
     background-repeat: no-repeat;
@@ -194,78 +546,67 @@ h2{
     top:150px;
     border-radius: 20px;
 }
+.id{
+    width:100%;
+    margin-bottom:20px;
+    height: 50px;
+    border: 2px solid black;
+
+}
+.pw{
+    width:100%;
+    height: 50px;
+    margin-bottom:20px;
+    border: 2px solid black;
+
+
+}
+.login_submit{
+    width:100%;
+    margin:30px 0 30px 0;
+}
 .login_exit{
     width:25px;
     position: absolute;
     top:20px;
     right:20px;
 }
-.login_id{
-    margin:30px;
-}
-.login_pw{
-    margin:30px;
-}  
-.login_check{
-    margin-left:25px;
-}
-.login_submit{
-    width:300px;
+.register{
     height:40px;
-    margin:20px 0 0 80px;
+    line-height: 40px;
+    
+}
+.register >a{
+    text-decoration: none;
+    color:black;
+}
+
+.login_submit{
+    width:100%;
+    height:40px;
     background: linear-gradient(to right,#FBEFEF,#F6CED8);
 }
 .register{
-    margin:50px 150px 0px 150px;
     text-align: center;
     border: 1px solid white;
     background: linear-gradient(to left,#E0F2F7,#58D3F7);
     color:black;
 }
+.check{
+  color:red;
+  font-weight: bold;
+  text-align: center;
+}
+/* 반응형 */
+@media screen and (max-width: 1000px){
+    .login_menu{
+        width:400px;
+        height:500px;
+        left:20%;
+    }
 
-/* 모바일 */
-.radio_btn{
-    width:20px;
-    height:20px;
-}
-section{
-    position: relative;
-}
-.youtube{
-    margin-top:100px;
-    float:left;
-    height:600px;
-    background:linear-gradient(to top, skyblue,white);
-    display:block;
-}
-.youtube:after{
-    clear: both;
-}
-.youtu_div{
-    float:left;
-    height:600px;
-    font-weight: bold;
-    font-size: 30PX;
-    line-height: 50px;
-    line-height: 10;
-}
-.phone_check_img{
-    font-size: 15px;
 }
 
-
-
-.phone{
-    float:left;
-    
-}
-.new_box{
-    float:left;
-    font-size:20px;
-}
-.phone_img_hide img{
-    float:left;
-}
 
 /* 회원가입 */
 .rere{
@@ -329,6 +670,15 @@ section{
     background :linear-gradient(to right,#F8EFFB,#F7819F)
 
 }
+/* 반응형 */
+@media screen and (max-width: 1100px ){
+    .mobile_register {
+        width:0%;
+    }
+    .register_menu{
+        width:100%;
+    }
+}
 /* 아이디 생성 */
 
 .create_div{
@@ -340,6 +690,7 @@ section{
     text-align: center;
     border-radius: 20px;
     border : 3px solid black;
+    position: relative;
 }
 .main_h2{
     font-size: 40px;
@@ -365,31 +716,25 @@ section{
     border-radius: 10px;
 }
 .create_body{
-    background:linear-gradient(to right,#5882FA,#0040FF,#58D3F7,#5882FA,#0040FF,#58D3F7)
+    background-color:white;
     
 }
 .login_exit2{
     width:25px;
     position: absolute;
     top:30px;
-    right:250px;
+    right:20px;
+}
+/* 반응형 */
+@media screen  and (max-width:1000px){
+    .moblie_create{
+        width:0%;
+    }
+    .create_menu{
+        width:100%;
+    }
 }
 
 
 
 
-
-
-
-.col-1 {width: 8.33%; }  /* 1칸 짜리 폭 */
-.col-2 {width: 16.66%; }  /* 2칸 짜리 폭 */
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}

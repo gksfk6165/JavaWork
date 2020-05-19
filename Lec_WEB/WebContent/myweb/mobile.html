@@ -1,99 +1,94 @@
 <!DOCTYPE html>
 <html lang="ko">
-    <head>
-        <meta charset="UTF-8">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>main</title>
+    <title>모바일</title>
     <script src="jquery-3.5.1.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="fullpage.css"></script>
-    <script src = "fullpage.js"></script>
-
     <link rel="stylesheet" href="samsung.css">
-    <script src="samsung.js"></script>
-       
-    </head>
+    
+</head>
 <body>
-        <header class="col-12 header_height">
-            <nav class="col-12 header_height">
-                <div class="menu_bar col-12 header_height">
-                    <a class="menu_left col-1" href="index.html"><img src="img/samsung.jpg" style="width:100px; height:auto"
-                            alt=""></a>
-                    <ul class="menu_galaxy col-7">
-                        <li><a href=""><span class="sam_theme">갤럭시5G</span></a></li>
-                        <li><a href="#"><span class="sam_theme">모바일</span></a></li>
-                        <li><a href=""><span class="sam_theme">TV</span></a></li>
-                        <li><a href=""><span class="sam_theme">가전</span></a></li>
-                        <li><a href=""><span class="sam_theme">IT</span></a></li>
-                        <li><a href=""><span class="sam_theme">오디오</span></a></li>
-                        <li><a href=""><span class="sam_theme">이벤트</span></a></li>
-                        <li><a href=""><span class="sam_theme">닷컴핫딜</span></a></li>
-                    </ul>
-                    <div class="menu_right col-4">
-                        <ul class="menu_story col-7">
-                            <li><a href=""><span class="sam_theme">스토리</span></a></li>
-                            <li><a href=""><span class="sam_theme">멤버십</span></a></li>
-                            <li><a href=""><span class="sam_theme">고객지원</span></a></li>
-                            <li><a href=""><span class="sam_theme">비즈니스</span></a></li>
-                        </ul>
-                        <ul class="menu_img col-5 ">
-                            <li  class="header_img col-4 "><button ><span class="login no_open"><img src="img/pic1.PNG" alt=""></span></button>
-                       
-                                <ul  class="header_menu_ul"style="display:none; width:200px;height:100px;border:1px solid black">
-                                    <li><a href="login.html">로그인</a></li>
-                                    <li><a>주문&배송 조회</a></li>
-                                    
-                                </ul>
-                
-                            </li>
-                            <li class="col-4"><button><span><img src="img/pic2.PNG" alt=""></span></button></li>
-                            <li class="col-4"><button><span><img src="img/pic3.PNG" alt=""></span></button></li>
-                        </ul>
-                    </div>
-    
-                </div>
-            </nav>
-        </header>
-        <section class="background_mobile">
-            <div class="youtube col-12">
-                <div class="youtu_div col-2" style="height:30px;"><span>갤럭시 S20</span></div>
-                <iframe class="youtu_div col-8" src="https://www.youtube.com/embed/44zebU6ilFQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <div class="youtu_div col-2" style="height:30px;"></div>
-            </div>
-            <div class="phone_check_img">
-                <div class="col-3 phone">
-                    <div class="col-6 phone">
-                        <div ><input class="ab " type="checkbox" id="galaxy_s" value="0"><span>갤럭시 S</span></div>
-                        <div ><input class="ab " type="checkbox" id="galaxy_note" value="1" ><span>갤럭시 노트</span></div>
-                        <div ><input class="ab " type="checkbox" id="galaxy_z" value="2" ><span>갤럭시 Z플립</span></div>
-                        <div ><input class="ab" type="checkbox" id="galaxy_a" value="3"><span>갤럭시 A</span></div>
-                    </div>
-                    <div class="col-6 phone phone_hide">
-    
-                    </div>
-                </div>
-               
-                <div class="col-9 phone phone_img_hide"></div>
+     <!-- 메뉴바 -->
+     <header class="col-12">
+        <div class="menu_left col-4">SAMSUNG</div> 
+        <div class="menu_center col-4">
+            <div class="menu_gal col-4"><a href="main.html">갤럭시 5G</a></div>
+            <div class="menu_mo col-4"><a href="mobile.html">모바일</a></div>
+            <div class="menu_tv col-4">TV</div>
+        </div>
+        <div class="menu_right col-4">
+            <a href="login.html">
+                <img class="login" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQuuXOJU4nWlGlya1TCobs7rwNncnyMGoBy-2WGZ1AHEWvk3Fpm&usqp=CAU" alt="">
+            </a>
+            <a href="main.html">
+                <img class= "login" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOgAAADZCAMAAAAdUYxCAAAAilBMVEX///8AAAD+/v4BAQH7+/sFBQXOzs6lpaX4+PiYmJiPj4+bm5ufn58JCQmWlpbf398jIyMqKirU1NTw8PBycnJQUFBlZWXZ2dnt7e3n5+eFhYWqqqpFRUXIyMg3NzcwMDC5ublZWVkTExOKiop9fX2/v78cHBw+Pj5ubm5jY2MXFxdLS0tXV1exsbGXBW63AAAQmUlEQVR4nO1dCV+jOhBPQlDWlW0t9kDbetVrXb//13tzhKMtCYdA8cnse7v+Kg35M5nMHYQYaaSRRhpppJG6JyWUov8LiH5bPoLS/H2h8Y8u/8ZJSAWWmcHEA5h1+bwBok4ejUZqfY6tkGtaBKB0BAIqRBAFAS6BYKgcndz/LqTLX5efsarI0eWft4+7u4+3i2XQx6TrEjAsWkgXLaISnqKA6vt19o35PUv9oAjmcy2lt08y+wHm/eaeNMiwmMyl9Olb+C9AnYihAdV68uhkKEw9du+7WnwCPD99TL4PWO+dkn8S2hheFHEUfw7lxglUiz+AMwzD5Ft+iEgvewNQjZQ4dzIUWCXPrUCJa09wEa7Z9Cn58EfKiwr6t0dS4pcbKKzdS2GbcxCgiCMDD77jwUc7oQe0/5YC9aQDKFgGb1KGR0g94um1GBBQAUC9EqC/7UDFO/AzLOAoLme5GNCGVIWjv4qBooH4T5JIHgPlTx/EgNRMOUeLgYJ4Rh/IN+s34Vfz4PsD1YTzeCPKs1XKj6h/RBZqClSs1ojTCRSW73rVOyILNZXR1av0YL+1r122HuTrMJAqtGtK6Ago+JxispXHm1DBY/LkNhbolp/YfigFWshRwHnH5lAZULwGkA7BmWkAVInlFH7hkM8cUIB6NTkRtj2qCxR/nD2i+qyydEmjyr/Lk8HL6KImUJDPs8cq8pmBlfJxhjEZfdIFXBMozHUjq6zaHFCU5Y04ddihLlDEGbr0ZxFQH5FiLOKEVHfp3qO9Xhco2v3PqGVOh7MOUAUO5m0JJofOuUe9pE4WC60BFPahcwoPNQMqbzFMfLJgUh2Oit8UNrEu2xKg4MJXifufHihe6zsNef5CMeFC+CNs6Y+hAMWUCl5qYr2HF3HwT74tXE8Cv/iEz+w0WaiKQEE1PMmCYEIKFH51qcSNtPpuvKqfRKW01emAag5rSgeGS/Rqfkmb62YEeKdPZDhUlFG9Q7PPd3jp55jI0eLSZjcZtsvrQJ3EcigBCpMGoEJf27YZMnxg/p+kO4BVv507FgyyCFDge+dqGUc9AKqCN+kEijgNKbQp0Hayj/keadX/8i1fuhcieqcEjRUo2nfJzOGfz+TTYvLlv5Xo35MpA+rLi+hB+lZbgD58FimPUAA/pe2xSFrXch4Pb+n68v2BkynHczf7i7/hoRKWKvFMXyzefWlDW8ciUP3q09LNyJfWlchcDs8Ox2Sf1RmCeI2F6reqo5SjnmPZcvTgeFAlzqQzuu3LaRz068mUcRR1h9VWR1dzeeyPqECLmXTEW9BefJz0ayGVAJUWhtInIISPybaCkRKRzBzldIkblV9sStETlMted6QyoNYHQPvQS5yMo8EviSfgnaQjTx4xp+hy22boy/clp02BEk+nq2yagYixsCP9AHD/LUgS733/WYjelm9zjkq5zWUFlZjgx1msGnaa1dQRj/C4eqW3tHgToB7bSesgkU+KanON0SRzTpSI71AFW5IX5PTdEkv7kNXyJNMxTpw7mDcpL3RgNKfZYjImRevC3H+OLkGsewg7VMmmFfICDKZsdqD470lvko1wlpNTEcyly8An50ir7pdvY6ByobLpmeKxUPIq3aTD64AcAidQ+aef2EpdoFRYBu5zFriESV7S3sKmxZ7PBiZ+sKA8qUVOca96IjHtGmhZQdUhhbQSdxk3wW/5k3NWCdB5bntR6LTbNiSmG6W7z0CV1DAcsYBw3uTFkKOg+5f9zqIl8NO1Oy3lw3PTndev1ARKOJ9EDgdF/vbNWvLW0ycBPN9JqynIwv0WdL4h1QLK4aGLLOIDFu6OcOaRkpw+CSN3ATpjN4TU4hmgcC8iIboU1Hq7LkcyswpVAKzfCpwUinLvSJ8a1usLclns7ox8iPiRDAEoy+dt9txBAT4UeeXs7rxRRjSJr/xyWvgw8DqicpchAJWsOjKlp8Ac8Lk89wgoQM1KATGlcenyxPFXr6sOLfxaQHHy9yLnLkdbSn4XFT2SNTjXRuzoO5+OoWmUq7jLpXtZESSnuVOjB6e+enEWbZB7Q3o24Fs9Y1GA3fD15N8VXN1NfKUGUFygM5FTK/FjedHjVSQSWwDkdSNdjjgOFXeVV6wOFKedCw8pNQlpwbnS3xQDS4J9uNOcuSwHemqTjlLiNThKODNDYUl2XQlH4TFMlyanhGaenjluwdK+7EpOKwAFvRDmy79QPmfEmzJbA5fBy5I6EXlFqlno0Kc03Blc3kUgqRpQX97lw0HkZlcwqbhz5oy4iUBh9S5fXA6qF2IgqQPLobTvhe4OE9vGWf6LUw6VyljTYqpkQ1JicuWQUxNIan/nrQQU+Pk6yScQbo/MWztQM3X2rWmQyavdwue4y237Rq9yV0ixeUvZr8TI0ZTU5vh1+TNK6JZ4SkNoEa9lgTll7kdDoz/bbnuQrgCUDO7MvkVX3V1OVETnKjV8tVrNnRo4pIqkduW0VL14sJTeo8wIVVi0UVI3dUw+uuLJxgt7avxQIZDU6vIlt7lkiotI5dz/nWkVrQeUvdhMn4LX4zIc/Hab+DApFKxt9zMeMYbB0r5+ra5riWY6EqqiG2ISVXQAVxeI3lK2RL+4UW0tX40JygtXURsC3aWlnQj23Uy6EV1jPpHmjrvvdUkCVe5gfq1sSOBZFMW18kA9ZAM9VU374D974LKUUAhg5ix6iHfnavjitdTOfgTD3JRE5wCnearUsr6WjqRwKVDY1uba6NMAg2E7x9oI0U5cfF1OeSFe2/PvPoW4eEdQ3KGzenUUp5QTWRivUe4ID6ouLK5fYYdAzoNK50C4cGIz77t97Xj+I6izS94ngQ2w7a6upKuqphL5lGkMEn0KkhOi1rTNAR5MIL4WB4VtCAQudGxE4K/cJvKJLI1fGqiVo1F9ebVKym6SykFHAhV8iS864qBXPlAO7FNiA9UEKwPs6Qmby2dKVKRhbAGqkXQYZh7FXe6aN/GReESvVj/L48D7s+mcIykBnF+Rz4R81JHGQaUjcwippTiWKpU8edW0tY08iHhr1/se5gjQteKrTQjky/KZgX2cwVph3xpE6F66Iklw0+mkYV5RU8rdCVT6Z6a+hNi/kQ3sWytQjx1UFn/Ym54dckpaAZE24qhYbl1WCa6us8T9xGz0p2xl3SbE3T7sWwNQWC+OwBN5idP6TXw0+uyK4lqWoXGxzLAkkSRUkWvOVVXt4OQd4JN2AHyciPTFKhdc9vx3VlNOaeDZ1K5VeEufiXRbDKqEIJrQp9BpHFScXVG0yELYmLkR9QrqYOKbR1fMBtbVdimySKxqUuNQSrjhXwZapbfBRWa9GldAuKklp8rkBRx2PBeYkjWCDuRTI7esjCiQ9MvkFGlfx15q+9Ws7qqCpL/vOcNcPCD+t47Tg8aUyWa3JZwZsW/9JIyi1qY73nF1vgSkDCg60Ldl7ufHioUebGG2+rsj9HW1qTGCe8WvzoAvBwerNJJoNi1dZl9I7oJRcFqzm90Z+ZgrDpJUm1artd3AlyYHXUVOjQntyDp78iEIUk2ug7l03PnLRBHw9yTgS2bphzOQxMHBChxNmgXt934X6Z4PSB3R11aII6kqNcDgzvBoLWvI54zWn1KUAYUTXDfFhWRi1GgtBNuO8O3fV74CR4PA+Pdqbqv4RkKkSWjHhlPzmVn2leHh1sD2LYWaVy7F1h5hVidKih7RJFhwjaxlIXGwzoGUqrdc2UwPn5XSQeL6T15qHUHQmFCl361UEn8jpFb/wacA6bU7kLRwN4x51NgZGKCY26vTmN+cYG/08YgRk4HCUMbOfjEr1GvrulWBxhXhWQTdz6UAOJh09ld2qlgy4lzVy4ybv5UJTdo44nHbxXWxf4pzf3DX+OABaln+Hd2mPriZ3t9DpEmJGWy/F87KQUltxYVA1TuGh+weC2tiuhOG6DZhP/KZEnonpmxbk0HoSHzxSXy3RT4b1kx57gaUT5GeG5AUjbcPx0q0d4Tm4MwgsVQtZHqGDtvh6LsY8LEFwnxjWWlqQ8Klf2vG65G4SuA+aSlWpnQ9LFIzJgN9Ndk/8gp/RgvHeg+Td2c9hudAn3filpUSeyepOchellWfwuqdB0fqNA4d8TvqJjKlXTppuu8Mjp38vM2ujd9sLcTHXs74KLaClWyOZM6MzFtTMnIhnc0b3RGnYs/zGUoOPVquLgIaXfExv0eXo0cNu13AMTDNbnavwpkR55TAOktcTkWtUV5xpyNc+1rQPP0si09r4egac5PCjkUnyPZIOMWcJUuNmYVyinnb5+N2eIVV74VA5cuEHBXBAao31wk+PZDH9p3JQOFfeGx14VqkMoFDowG8oK0sNP+o8jK149/rnbDVPvHBdIukaJsqksJiOX2lcLA+BGoqFPfGxEj/ivPYiqoi5tzlfELy2ZZ9z3cfrji0nQNL9gJ6AcfeWoDncR+EihBnlIQbQY2isj0pSkMUn9M553r1Qn0kKVCfT+UuKhaksOn8wA4ALzANmsBiX22HgVPS4Q3bKNfwhXKXk1PqkSk+kI60ZHw44lrrpDxAqXhLWdd+MRVTiAzZpp3juMPsV0LBr1fFJziw+n3m+JJnXg6AYc2kSgqj5F9O2rdFqCO9xBU3SP9xGxSlxTzqT7XmSwHNLgUK17/DE+GsAxZTT12mU/+Ethm64inTsMqMG6hR/z0VQ0yAaj2VpsGTKpXSCkTCOQj5TIg6El5yDRmaGjPJkvPl1tkQjlkjUwVPXWMpUK0iZ1L4FEQtNnId5TrDyOZJNIvz/TS48/6m8iUORGS1s8/S2lZ/KvJNfXq6dBUhNT5laUaYL8Zy0r2e1JLC5NPR/ms3NB+jcOPGyECFPt9O55sDK3GgQA83HXDb5tO780q5F7CQolhjT1ReCw0T6F5PMc0ezKW47GVC5plwBRNlcwbPUY9O6dufPb/yrBxoMfqBApXeAdCv0gj01DQCbQy0o3qpL5L3U4D+GI7KQ/UyAq0MtGLrc8/keS2/Ym4EemIagY5AvylQ+VOA/hiOdgD091emw+2kx5E1L6GmicjWgdY+XC2PEv/LXplbQOZsve8NtFoOw2sYSR0SUPjzOJ1eIU3zdGU+RJJNi3mGBBS+Vjr4ps57x/aHHxZQDsztR+bSxmb8uXF51vCAukdv3Iw5Ah0s0J+wdEFOv1CKdj4CHYE6qWl/6LcD+pUD+X8EUFkRaGMaCtAfw9ER6Ah0BDoCHYGOQEegI9AR6Ah0BDoQoD/G8f4hQJu9ToyRfivHuznQb8bR+q8T+8ZAf0i4cwQ6Ah2BjkBHoP0BbV5Q9e2ANi2RG4GOQEegfQCt9Dqx/wPQL9Trfjd/tGmDz7fj6ECBeq0DbdpW2TnQtkvNfwhHsZl9oLZu1UPMvzdQr8a59JVI4YGXjSpNO+forFWgWsV/hwn0LnIN3YT+DRFoK68SO5jLc6OZdM7RTctA6S3y2G/ku04Tz+PzOgWK08Dup4XzfKYmSJVYTen0q1wDUglSbsaSXQD1PH5j+Daq93qXcpx4xOtqLU3vVbW50GVeN0C5Bv9hVfM9NuVA+W2gtx+1ppNQN95LuLjHsyfbfSFyciCojidAy+UM6cxNs4QmpcPrkqGKRo8jM6e21UtzKp/JcOaaI1WfuhiztJWmBZTV5pWbf/tARcPX+3VI1eZTf9aDAzrSSCONNFKe/gMojufPlvX8FgAAAABJRU5ErkJggg==" alt="">
+            </a>
+        </div>
+    </header>
 
+    <!--유튜브 영상-->
+    <section class="mobile_section"> 
+        <article class="article_1">
+            <div class="youtube_div col-12">
+                <iframe  src="https://www.youtube.com/embed/44zebU6ilFQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div><h2>갤럭시 S20</h2><img src="https://m.ollehimt.com/web/product/big/20200219/e47f8f7133c15b6b915260fd13f35ec0.png" alt=""></div>
+            </div>
+        </article>
+        <article class="article_2 col-12"> 
+            <!-- 체크박스 -->
+            <div class="col-4 fisrt_div">
+                <!-- 첫번째 체크박스 -->
+                <div class="phone phone_top col-6">
+                        <div class="phone_checking"><input class="ab" type="checkbox" id="galaxy_s" value="0"><span>갤럭시 S</span></div>
+                        <div class="phone_checking"><input class="ab" type="checkbox" id="galaxy_note" value="1" ><span>갤럭시 노트</span></div>
+                        <div class="phone_checking"><input class="ab" type="checkbox" id="galaxy_z" value="2" ><span>갤럭시 Z플립</span></div>
+                        <div class="phone_checking"><input class="ab" type="checkbox" id="galaxy_a" value="3"><span>갤럭시 A</span></div>
 
+                </div>
+                <div class= "col-6  phone phone_hide">
+                </div>
+            </div >
+            <!-- 이미지 나오기 -->
+            <div class="col-8 phone phone_img_hide"></div>
             </div>
-            <div class="imo_div off">
-                <a>
-                    <img class="imo imo_one" src="https://images.samsung.com/is/image/samsung/p5/sec/common/chatbot/2020/Floating__plus.png?$ORIGIN_PNG$" style="width:67px;height:67px">
-                </a>
-                <a>
-                    <img class="imo imo_two" src="https://images.samsung.com/is/content/samsung/p5/sec/common/chatbot/2020/chatbot_normal_0310.gif">
-                </a>
-                <a>
-                    <img class="imo imo_three" src="https://images.samsung.com/is/content/samsung/p5/sec/common/chatbot/2020/e-promoter_normal.gif?0.9126310537407103">
-                </a>
-                <a>
-                    <img class="imo imo_four" src="https://images.samsung.com/is/content/samsung/p5/sec/common/chatbot/2020/reservation_normal.gif">
-                </a>
-            </div>
-        </section>
+        </article>
+    </section>
+    <footer class="col-12">
+        <div class="footer_div1">
+        <p> Copyright © 1995-2020 SAMSUNG All Rights Reserved.
+            경기도 수원시 영통구 삼성로 129 (매탄동) 삼성전자주식회사 대표이사 김기남 사업자등록번호 124-81-00998 사업자 정보확인 통신판매업 신고: 2000-경기수원-0515 호스팅서비스사업자 : 삼성에스디에스(주)
+            대표번호: 02-2255-0114 팩스: 02-2255-0117 제품/서비스/멤버십: 1588-3366 구매문의: 1588-6084
+            삼성전자주식회사는 통신판매중개자로서 통신판매의 당사자가 아니며, 개별 판매자가 등록한 거래정보 및 거래에 대하여 책임을 지지 않습니다. 본 사이트의 콘텐츠는 저작권법의 보호를 받는바, 무단 전재, 복사, 배포 등을 금합니다.
+        </p></div>
+        <div class="footer_div2">
+            <ul>
+                <li>한국/한국어</li>
+                <li>이메일 무단 수집거부</li>
+                <li>아이디어 정책</li>
+                <li>사이트맵</li>
+                <li>이용약관</li>
+            </ul>
+        </div>
+    
+        </footer>
+        <div class="imo_div off">
+            <a>
+                <img class="imo imo_one" src="https://images.samsung.com/is/image/samsung/p5/sec/common/chatbot/2020/Floating__plus.png?$ORIGIN_PNG$" style="width:67px;height:67px">
+            </a>
+            <a>
+                <img class="imo imo_two" src="https://images.samsung.com/is/content/samsung/p5/sec/common/chatbot/2020/chatbot_normal_0310.gif">
+            </a>
+            <a>
+                <img class="imo imo_three" src="https://images.samsung.com/is/content/samsung/p5/sec/common/chatbot/2020/e-promoter_normal.gif?0.9126310537407103">
+            </a>
+            <a>
+                <img class="imo imo_four" src="https://images.samsung.com/is/content/samsung/p5/sec/common/chatbot/2020/reservation_normal.gif">
+            </a>
+        </div>
+    
+        <script src="samsung.js"></script>
+    
 </body>
-
 
 </html>
