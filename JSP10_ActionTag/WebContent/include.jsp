@@ -26,7 +26,7 @@
     String name = "홍길동";
     int age = 33;
 %>
-<%@ include file="sub2.jsp" %>
+<%-- <%@ include file="sub2.jsp" %>--%>
 <%--<jsp:include page="sub2.jsp"/> --%>
 
 <jsp:include page="sub3.jsp">

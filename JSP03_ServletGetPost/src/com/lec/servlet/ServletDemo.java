@@ -54,7 +54,7 @@ public class ServletDemo extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		System.out.println("doPostO() 호출");
+		System.out.println("doPost() 호출");
 		doGet(request, response);
 	}
 
